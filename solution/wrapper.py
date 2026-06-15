@@ -33,7 +33,8 @@ def mitigate(call_next, question, config, context):
         "tools_used": tools_used,
         "steps": steps,
         "status": result.get("status"),
-        "error": result.get("error")
+        "error": result.get("error"),
+        "trace": result.get("trace")
     })
     
     # 4. Redact PII from Answer
